@@ -9,7 +9,6 @@ const Schedule = () => {
         <section className="schedule">
             <div className="schedule__inner">
 
-                {/* LEFT CONTENT */}
                 <div className="schedule__content">
                     <p className="schedule__eyebrow">
                         Exciting Opportunities for Parents!
@@ -31,8 +30,6 @@ const Schedule = () => {
                     </div>
 
                 </div>
-
-                {/* RIGHT IMAGE */}
                 <div className="schedule__media">
                     <img
                         src={scheduleImage}

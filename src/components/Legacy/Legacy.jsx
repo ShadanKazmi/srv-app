@@ -23,60 +23,11 @@ const Legacy = () => {
                 <section className="participating-schools">
 
                     <div className="participating-schools__inner">
-
-                        {/* SECTION TITLE */}
                         <h2 className="participating-schools__title">
                             Participating Schools
                         </h2>
-
-                        {/* <div className="participating-schools__grid">
-                            <div className="participating-schools__row">
-                                <div className="participating-schools__item">
-                                    <img src={school1} alt="School name" />
-                                </div>
-                                <div className="participating-schools__item">
-                                    <img src={school2} alt="School name" />
-                                </div>
-                                <div className="participating-schools__item">
-                                    <img src={school3} alt="School name" />
-                                </div>
-                                <div className="participating-schools__item">
-                                    <img src={school4} alt="School name" />
-                                </div>
-                                <div className="participating-schools__item">
-                                    <img src={school5} alt="School name" />
-                                </div>
-                                <div className="participating-schools__item">
-                                    <img src={school6} alt="School name" />
-                                </div>
-
-                            </div>
-
-                            <div className="participating-schools__row">
-                                <div className="participating-schools__item">
-                                    <img src={school1} alt="School name" />
-                                </div>
-                                <div className="participating-schools__item">
-                                    <img src={school2} alt="School name" />
-                                </div>
-                                <div className="participating-schools__item">
-                                    <img src={school3} alt="School name" />
-                                </div>
-                                <div className="participating-schools__item">
-                                    <img src={school4} alt="School name" />
-                                </div>
-                                <div className="participating-schools__item">
-                                    <img src={school5} alt="School name" />
-                                </div>
-                                <div className="participating-schools__item">
-                                    <img src={school6} alt="School name" />
-                                </div>
-                            </div>
-                        </div> */}
-                        {/* LOGO GRID */}
                         <div className="participating-schools__grid">
 
-                            {/* Row 1 – LEFT TO RIGHT */}
                             <div className="participating-schools__row participating-schools__row--ltr">
                                 <div className="participating-schools__track">
                                     {[school1, school2, school3, school4, school5, school6].map((logo, i) => (
@@ -85,7 +36,6 @@ const Legacy = () => {
                                         </div>
                                     ))}
 
-                                    {/* DUPLICATE FOR LOOP */}
                                     {[school1, school2, school3, school4, school5, school6].map((logo, i) => (
                                         <div className="participating-schools__item" key={`r1-b-${i}`} aria-hidden="true">
                                             <img src={logo} alt="" />
@@ -94,7 +44,6 @@ const Legacy = () => {
                                 </div>
                             </div>
 
-                            {/* Row 2 – RIGHT TO LEFT */}
                             <div className="participating-schools__row participating-schools__row--rtl">
                                 <div className="participating-schools__track">
                                     {[school1, school2, school3, school4, school5, school6].map((logo, i) => (
@@ -103,7 +52,6 @@ const Legacy = () => {
                                         </div>
                                     ))}
 
-                                    {/* DUPLICATE FOR LOOP */}
                                     {[school1, school2, school3, school4, school5, school6].map((logo, i) => (
                                         <div className="participating-schools__item" key={`r2-b-${i}`} aria-hidden="true">
                                             <img src={logo} alt="" />

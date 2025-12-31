@@ -1,9 +1,5 @@
-/* =========================================================
-   EXHIBITION – SECTION
-   ========================================================= */
-
 .exhibition {
-  width: 99.4vw;                 /* force full viewport width */
+  width: 99.4vw;
   height: 767px;
 
   background: linear-gradient(360deg, #000E38 0%, #3F186A 100%);
@@ -36,10 +32,6 @@
   z-index: 1;
 }
 
-/* =========================================================
-   INNER WRAPPER
-   ========================================================= */
-
 .exhibition__inner {
   max-width: 1920px;
   width: 100%;
@@ -52,10 +44,6 @@
   gap: 40px;
 }
 
-/* =========================================================
-   TITLE
-   ========================================================= */
-
 .exhibition__title {
   font-family: 'Museo Sans', sans-serif;
   font-weight: 700;
@@ -67,10 +55,6 @@
   color: #ffffff;
   margin: 0;
 }
-
-/* =========================================================
-   CARD TRACK
-   ========================================================= */
 
 .exhibition__track {
   display: flex;
@@ -86,10 +70,6 @@
 .exhibition__track::-webkit-scrollbar {
   display: none;
 }
-
-/* =========================================================
-   CARD
-   ========================================================= */
 
 .exhibition__card {
   width: 417px;
@@ -108,19 +88,11 @@
   scroll-snap-align: start;
 }
 
-/* =========================================================
-   ICON
-   ========================================================= */
-
 .exhibition__icon {
   width: 57px;
   height: 80px;
   margin-left: 11px;
 }
-
-/* =========================================================
-   CARD TEXT
-   ========================================================= */
 
 .exhibition__card h3 {
   font-family: 'Open Sans', sans-serif;
@@ -150,10 +122,6 @@ line-height: 1.5;
 
 }
 
-/* =========================================================
-   NAVIGATION
-   ========================================================= */
-
 .exhibition__nav {
   display: flex;
   justify-content: center;
@@ -177,10 +145,6 @@ line-height: 1.5;
   background: rgba(255,255,255,0.15);
 }
 
-/* =========================================================
-   RESPONSIVE
-   ========================================================= */
-
 @media (max-width: 768px) {
   .exhibition {
     height: auto;
@@ -197,34 +161,23 @@ line-height: 1.5;
   }
 
   .exhibition__nav {
-    display: none; /* swipe only on mobile */
+    display: none; 
   }
 }
-
-/* =========================================================
-   SLIDER ENHANCEMENTS (NON-DESTRUCTIVE)
-   ========================================================= */
-/* =========================================================
-   CARD TRACK – FIXED SLIDER
-   ========================================================= */
 
 .exhibition__track {
   display: flex;
   gap: 16px;
 
-  overflow-x: hidden; /* IMPORTANT */
+  overflow-x: hidden; 
   scroll-behavior: smooth;
 
   padding-bottom: 12px;
   position: relative;
 }
 
-/* =========================================================
-   CARD – LOCK SIZE (NO SHRINK)
-   ========================================================= */
-
 .exhibition__card {
-  flex: 0 0 417px; /* ⬅️ preserves width */
+  flex: 0 0 417px; 
   height: 380px;
 
   background: linear-gradient(59.05deg, #DDBFFF 0.39%, #EDDDFF 93.5%);
@@ -237,10 +190,6 @@ line-height: 1.5;
 
   scroll-snap-align: start;
 }
-
-/* =========================================================
-   TRACK WRAPPER (VIEWPORT)
-   ========================================================= */
 
 .exhibition__track-wrapper {
   overflow: hidden;

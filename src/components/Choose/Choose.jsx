@@ -10,16 +10,12 @@ const Choose = () => {
     return (
         <section className="choose">
             <div className="choose__inner">
-
-                {/* SECTION TITLE */}
                 <h2 className="choose__title">
                     Choose the School That Fits You Best
                 </h2>
 
-                {/* CARD GRID */}
                 <div className="choose__grid">
 
-                    {/* CARD 1 */}
                     <article className="choose__card">
                         <img
                             src={choose1}
@@ -37,7 +33,6 @@ const Choose = () => {
                         </div>
                     </article>
 
-                    {/* CARD 2 */}
                     <article className="choose__card">
                         <img
                             src={choose2}
@@ -55,7 +50,6 @@ const Choose = () => {
                         </div>
                     </article>
 
-                    {/* CARD 3 */}
                     <article className="choose__card">
                         <img
                             src={choose3}
@@ -72,8 +66,6 @@ const Choose = () => {
                             </p>
                         </div>
                     </article>
-
-                    {/* CARD 4 */}
                     <article className="choose__card">
                         <img
                             src={choose4}
@@ -92,7 +84,6 @@ const Choose = () => {
                     </article>
 
                 </div>
-                {/* MOBILE PAGINATION DOTS */}
                 <div className="choose__pagination">
                     <span className="choose__dot is-active" />
                     <span className="choose__dot" />

@@ -1,18 +1,8 @@
-/* =========================================================
-   FOOTER – OUTER
-   ========================================================= */
-
-/* =========================================================
-   FOOTER – FULL BLEED FIX
-   ========================================================= */
-
 .footer {
   width: 99.4vw;
-  background: linear-gradient(
-    360deg,
-    #000E38 0%,
-    #3F186A 100%
-  );
+  background: linear-gradient(360deg,
+      #000E38 0%,
+      #3F186A 100%);
 
   position: relative;
   left: 50%;
@@ -23,14 +13,9 @@
   overflow: hidden;
 }
 
-
-/* =========================================================
-   FOOTER – PURPLE SECTION
-   ========================================================= */
-
 .footer__inner {
   max-width: 1920px;
-  height: 274px;              /* EXACT from Figma */
+  height: 274px;
   margin: 0 auto;
   padding: 0 80px;
   display: grid;
@@ -41,18 +26,10 @@
   padding: 60px;
 }
 
-/* =========================================================
-   BRAND
-   ========================================================= */
-
 .footer__brand img {
   width: 142px;
   height: auto;
 }
-
-/* =========================================================
-   TEXT BLOCKS
-   ========================================================= */
 
 .footer__block h4,
 .footer__social h4 {
@@ -70,13 +47,9 @@
   font-style: regular;
   font-size: 18px;
   line-height: 1.5;
-  color: rgba(255,255,255,1);
+  color: rgba(255, 255, 255, 1);
   margin: 0;
 }
-
-/* =========================================================
-   SOCIAL
-   ========================================================= */
 
 .footer__icons {
   display: flex;
@@ -88,24 +61,16 @@
   height: 52px;
 }
 
-/* =========================================================
-   COPYRIGHT BAR
-   ========================================================= */
-
 .footer__copyright {
   background: #ffffff;
   text-align: center;
 
   font-family: 'Museo Sans', sans-serif;
   font-size: 16px;
-    line-height: 1.5;
+  line-height: 1.5;
   padding: 12px 20px;
   color: linear-gradient(360deg, #000E38 0%, #3F186A 100%);
 }
-
-/* =========================================================
-   RESPONSIVE – TABLET
-   =========================s================================ */
 
 @media (max-width: 1024px) {
   .footer__inner {
@@ -119,10 +84,6 @@
     grid-column: span 2;
   }
 }
-
-/* =========================================================
-   RESPONSIVE – MOBILE
-   ========================================================= */
 
 @media (max-width: 600px) {
   .footer__inner {
@@ -140,20 +101,15 @@
   }
 }
 
-/* =========================================================
-   FOOTER – ICON + TEXT ALIGNMENT FIX
-   ========================================================= */
-
 .footer__block--icon {
   display: flex;
-  align-items: flex-start; /* 🔑 keeps all blocks aligned */
+  align-items: flex-start;
   gap: 16px;
 }
 
-/* Icon sizing (matches Figma ~50px) */
 .footer__icon {
   width: 52px;
   height: 52px;
   flex-shrink: 0;
-  margin-top: 4px; 
+  margin-top: 4px;
 }

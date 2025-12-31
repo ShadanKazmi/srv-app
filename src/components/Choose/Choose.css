@@ -1,36 +1,24 @@
-/* =========================================================
-   CHOOSE – SECTION CONTAINER
-   ========================================================= */
-
 .choose {
   width: 100%;
-  margin-top: 80px; /* EXACT: 80px below legacy section */
+  margin-top: 80px;
   opacity: 1;
 }
-
-/* =========================================================
-   CHOOSE – INNER WRAPPER (1917px)
-   ========================================================= */
 
 .choose__inner {
   max-width: 1917px;
   height: 525px;
 
   margin: 0 auto;
-  padding: 0 80px; /* matches overall site rhythm */
+  padding: 0 80px;
 
   display: flex;
   flex-direction: column;
-  gap: 24px; /* EXACT gap from Figma */
+  gap: 24px;
 }
-
-/* =========================================================
-   CHOOSE – SECTION TITLE
-   ========================================================= */
 
 .choose__title {
   font-family: 'Museo Sans', sans-serif;
-  font-weight: 600;          /* as specified */
+  font-weight: 600;
   font-style: normal;
 
   font-size: 36px;
@@ -49,22 +37,14 @@
   color: transparent;
 }
 
-/* =========================================================
-   CHOOSE – CARD GRID
-   ========================================================= */
-
 .choose__grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 24px; /* EXACT horizontal gap */
+  gap: 24px;
 
   width: 100%;
-  flex: 1; /* fills remaining height */
+  flex: 1;
 }
-
-/* =========================================================
-   CHOOSE – CARD
-   ========================================================= */
 
 .choose__card {
   width: 100%;
@@ -80,13 +60,8 @@
   flex-direction: column;
   justify-content: flex-end;
 
-  background-color: #000; /* fallback if image fails */
+  background-color: #000;
 }
-
-
-/* =========================================================
-   CHOOSE – CARD IMAGE
-   ========================================================= */
 
 .choose__image {
   width: 100%;
@@ -94,10 +69,6 @@
   object-fit: cover;
   display: block;
 }
-
-/* =========================================================
-   CHOOSE – CARD OVERLAY
-   ========================================================= */
 
 .choose__overlay {
   position: absolute;
@@ -109,16 +80,10 @@
 
   padding: 20px;
 
-  background: linear-gradient(
-    180deg,
-    rgba(0, 0, 0, 0) 40%,
-    rgba(0, 0, 0, 0.75) 100%
-  );
+  background: linear-gradient(180deg,
+      rgba(0, 0, 0, 0) 40%,
+      rgba(0, 0, 0, 0.75) 100%);
 }
-
-/* =========================================================
-   CHOOSE – CARD TITLE
-   ========================================================= */
 
 .choose__card-title {
   font-family: 'Archivo', sans-serif;
@@ -131,10 +96,6 @@
   margin: 0 0 6px 0;
 }
 
-/* =========================================================
-   CHOOSE – CARD TEXT
-   ========================================================= */
-
 .choose__card-text {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
@@ -146,14 +107,8 @@
   margin: 0;
 }
 
-
-/* =========================================================
-   CHOOSE – MOBILE SLIDER (ADD-ON ONLY)
-   ========================================================= */
-
 @media (max-width: 768px) {
 
-  /* Convert grid → horizontal slider */
   .choose__grid {
     display: flex;
     gap: 16px;
@@ -167,7 +122,6 @@
     padding-bottom: 16px;
   }
 
-  /* Hide scrollbar */
   .choose__grid::-webkit-scrollbar {
     display: none;
   }
@@ -176,7 +130,6 @@
     scrollbar-width: none;
   }
 
-  /* Each card becomes a slide */
   .choose__card {
     flex: 0 0 85%;
     max-width: 85%;
@@ -184,7 +137,6 @@
     scroll-snap-align: center;
   }
 
-  /* Pagination container */
   .choose__pagination {
     display: flex;
     justify-content: center;
@@ -193,7 +145,6 @@
     margin-top: 16px;
   }
 
-  /* Pagination dots */
   .choose__dot {
     width: 8px;
     height: 8px;
@@ -207,51 +158,39 @@
   }
 }
 
-/* =========================================================
-   REDUCED MOTION SUPPORT
-   ========================================================= */
-
 @media (prefers-reduced-motion: reduce) {
   .choose__grid {
     scroll-behavior: auto;
   }
 }
 
-/* =========================================================
-   CHOOSE – MOBILE SLIDER FIX (TEXT VISIBILITY)
-   ========================================================= */
-
 @media (max-width: 768px) {
 
-  /* Slider container */
   .choose__grid {
     display: flex;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
 
     -webkit-overflow-scrolling: touch;
-    padding-bottom: 40px; /* space for dots */
+    padding-bottom: 40px;
   }
 
   .choose__grid::-webkit-scrollbar {
     display: none;
   }
 
-  /* Each slide */
   .choose__card {
     flex: 0 0 85%;
     max-width: 85%;
 
-    height: 405px;              /* 🔴 CRITICAL FIX */
+    height: 405px;
     scroll-snap-align: center;
   }
 
-  /* Ensure image fills card */
   .choose__image {
     height: 100%;
   }
 
-  /* Overlay must stay visible */
   .choose__overlay {
     position: absolute;
     inset: 0;
@@ -264,9 +203,6 @@
   }
 }
 
-/* =========================================================
-   CHOOSE – FORCE TEXT OVER IMAGE (MOBILE FIX)
-   ========================================================= */
 
 .choose__card {
   position: relative;
@@ -274,11 +210,11 @@
 
 .choose__image {
   position: relative;
-  z-index: 1; /* image stays behind */
+  z-index: 1;
 }
 
 .choose__overlay {
   position: absolute;
   inset: 0;
-  z-index: 2; /* text sits ABOVE image */
+  z-index: 2;
 }

@@ -23,12 +23,10 @@ const Exhibition = () => {
     <section className="exhibition">
       <div className="exhibition__inner">
 
-        {/* TITLE */}
         <h2 className="exhibition__title">
           What Makes This Exhibition a Must-Visit
         </h2>
 
-        {/* TRACK WRAPPER */}
         <div className="exhibition__track-wrapper">
           <div
             className="exhibition__track"
@@ -68,7 +66,6 @@ const Exhibition = () => {
           </div>
         </div>
 
-        {/* NAVIGATION */}
         <div className="exhibition__nav">
           <button
             className="exhibition__nav-btn"
