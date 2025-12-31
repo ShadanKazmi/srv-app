@@ -1,0 +1,248 @@
+/* =========================================================
+   EXHIBITION – SECTION
+   ========================================================= */
+
+.exhibition {
+  width: 99.4vw;                 /* force full viewport width */
+  height: 767px;
+
+  background: linear-gradient(360deg, #000E38 0%, #3F186A 100%);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;           
+  margin-right: -50vw;        
+
+  overflow: hidden;
+}
+
+.exhibition::after {
+  content: "";
+  position: absolute;
+  left: -10%;
+  bottom: -1px;
+
+  width: 120%;
+  height: 600px;
+
+  background: linear-gradient(360deg, #000E38 0%, #3F186A 100%);
+  border-radius: 0 0 50% 50%;
+
+  z-index: 1;
+}
+
+/* =========================================================
+   INNER WRAPPER
+   ========================================================= */
+
+.exhibition__inner {
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 80px;
+ position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+/* =========================================================
+   TITLE
+   ========================================================= */
+
+.exhibition__title {
+  font-family: 'Museo Sans', sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1.5;
+  font-style: regular;
+  text-align: center;
+
+  color: #ffffff;
+  margin: 0;
+}
+
+/* =========================================================
+   CARD TRACK
+   ========================================================= */
+
+.exhibition__track {
+  display: flex;
+  gap: 16px;
+  margin-left: 100px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+
+  padding-bottom: 12px;
+}
+
+.exhibition__track::-webkit-scrollbar {
+  display: none;
+}
+
+/* =========================================================
+   CARD
+   ========================================================= */
+
+.exhibition__card {
+  width: 417px;
+  height: 380px;
+
+  background: linear-gradient(59.05deg, #DDBFFF 0.39%, #EDDDFF 93.5%);
+
+  border-radius: 20px;
+  padding: 24px;
+  border:2px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  scroll-snap-align: start;
+}
+
+/* =========================================================
+   ICON
+   ========================================================= */
+
+.exhibition__icon {
+  width: 57px;
+  height: 80px;
+  margin-left: 11px;
+}
+
+/* =========================================================
+   CARD TEXT
+   ========================================================= */
+
+.exhibition__card h3 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  margin-top: 20px;
+line-height: 1.5;
+  background: linear-gradient(360deg, #000E38 0%, #3F186A 100%);
+-webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+.exhibition__card p {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  font-style: regular;
+  line-height: 1.5;
+  margin: 0;
+  background: linear-gradient(360deg, #000E38 0%, #3F186A 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+
+}
+
+/* =========================================================
+   NAVIGATION
+   ========================================================= */
+
+.exhibition__nav {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.exhibition__nav-btn {
+  width: 60px;
+  height: 60px;
+
+  border-radius: 50%;
+  border: 3px solid #ffffff;
+  background: transparent;
+  color: #ffffff;
+
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.exhibition__nav-btn:hover {
+  background: rgba(255,255,255,0.15);
+}
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 768px) {
+  .exhibition {
+    height: auto;
+    padding: 80px 0;
+  }
+
+  .exhibition__inner {
+    padding: 0 20px;
+    gap: 32px;
+  }
+
+  .exhibition__title {
+    font-size: 28px;
+  }
+
+  .exhibition__nav {
+    display: none; /* swipe only on mobile */
+  }
+}
+
+/* =========================================================
+   SLIDER ENHANCEMENTS (NON-DESTRUCTIVE)
+   ========================================================= */
+/* =========================================================
+   CARD TRACK – FIXED SLIDER
+   ========================================================= */
+
+.exhibition__track {
+  display: flex;
+  gap: 16px;
+
+  overflow-x: hidden; /* IMPORTANT */
+  scroll-behavior: smooth;
+
+  padding-bottom: 12px;
+  position: relative;
+}
+
+/* =========================================================
+   CARD – LOCK SIZE (NO SHRINK)
+   ========================================================= */
+
+.exhibition__card {
+  flex: 0 0 417px; /* ⬅️ preserves width */
+  height: 380px;
+
+  background: linear-gradient(59.05deg, #DDBFFF 0.39%, #EDDDFF 93.5%);
+  border-radius: 20px;
+  padding: 24px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  scroll-snap-align: start;
+}
+
+/* =========================================================
+   TRACK WRAPPER (VIEWPORT)
+   ========================================================= */
+
+.exhibition__track-wrapper {
+  overflow: hidden;
+  width: 100%;
+}

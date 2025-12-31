@@ -1,0 +1,324 @@
+/* =========================================================
+   TOPBAR SPACER (RESERVES SPACE)
+   ========================================================= */
+
+.topbar-spacer {
+  height: 100px; /* same as topbar */
+  transition: height 0.3s ease;
+
+}
+
+body.is-scrolled .topbar-spacer {
+  height: 0;
+}
+
+/* =========================================================
+   TOPBAR – BASE
+   ========================================================= */
+
+.topbar {
+  width: 100%;
+  height: 100px; /* Figma height */
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  align-items: center;
+}
+
+/* =========================================================
+   TOPBAR – VARIANTS
+   ========================================================= */
+
+.topbar--white {
+  background-color: #ffffff;
+  z-index: 20;
+}
+
+/* =========================================================
+   INNER CONTAINER
+   ========================================================= */
+
+.topbar__inner {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+
+  padding-left: 76px;
+  padding-right: 48px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.topbar__logo {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.topbar__logo img {
+  width: 201px;
+  height: auto;
+  display: block;
+  margin-top: 50px; /* kept as requested */
+}
+
+/* =========================================================
+   CTA BUTTON
+   ========================================================= */
+
+/* =========================================================
+   TOPBAR – CTA BUTTON (UPDATED TO FIGMA)
+   ========================================================= */
+
+/* =========================================================
+   TOPBAR – SPLIT CTA BUTTON
+   ========================================================= */
+
+.topbar__cta {
+  width: 205px;
+  height: 60px;
+  margin-top: 19px;
+  margin-right: 20px;
+  display:flex;
+  align-items:center;
+
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+
+  border-radius: 6px;
+  border: 2px solid rgba(0, 14, 56, 1);
+  overflow: hidden;   /* required for clean split */
+
+  opacity: 1;
+}
+
+.topbar__cta-icon {
+  width: 60px;
+  height: 60px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 28px;
+  font-weight: 600;
+  color: #ffffff;
+
+  background: linear-gradient(270deg, #000E38 0%, #3F186A 100%);
+
+}
+
+.topbar__cta-text {
+  width: 145px;
+  height: 60px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 13px 20px; /* top/bottom & left/right */
+  
+  gap: 10px;
+
+  font-size: 14px;
+  font-weight: 700;
+  font-style: bold;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+
+  color: rgba(3, 14, 59, 1);
+;
+
+  background: #ffffff;
+
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+
+  border: 2px solid #000E38;
+  border-left: none; /* clean join with icon */
+}
+
+
+
+.topbar__cta:focus-visible {
+  outline: 3px solid #000;
+  outline-offset: 3px;
+}
+
+/* =========================================================
+   TOPBAR – PURPLE (UNDERLAY)
+   ========================================================= */
+
+.topbar--purple {
+  background: linear-gradient(
+    89.72deg,
+    #000E38 0.22%,
+    #3F186A 52.52%
+  );
+
+  z-index: 15;
+
+  /* start hidden behind white */
+  transform: translateY(-100%);
+  transition: transform 0.3s ease;
+}
+
+/* slide DOWN to become visible */
+body.is-scrolled .topbar--purple {
+  transform: translateY(0);
+}
+
+/* =========================================================
+   RESPONSIVE BEHAVIOR (UNCHANGED)
+   ========================================================= */
+
+@media (max-width: 1024px) {
+  .topbar {
+    height: 80px;
+  }
+
+  .topbar-spacer {
+    height: 80px;
+  }
+
+  .topbar__inner {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .topbar__logo img {
+    width: 150px;
+    margin-top: 0;
+  }
+
+  .topbar__cta {
+    width: 180px;
+    height: 52px;
+    margin-top: 0;
+    margin-right: 0;
+  }
+
+  .topbar__cta-icon {
+    width: 52px;
+    height: 52px;
+    font-size: 24px;
+  }
+
+  .topbar__cta-text {
+    width: auto;
+    height: 52px;
+    font-size: 13px;
+    padding: 10px 16px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  /* Prevent horizontal scroll */
+  html, body {
+    overflow-x: hidden;
+  }
+
+  .topbar,
+  .topbar-spacer {
+    height: 64px;
+  }
+
+  .topbar__inner {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  /* LOGO */
+  .topbar__logo img {
+    width: 120px;
+    margin-top: 0;
+  }
+
+  /* CTA BUTTON — COMPACT */
+  .topbar__cta {
+    width: auto;
+    height: 44px;
+    border-radius: 4px;
+  }
+
+  .topbar__cta-icon {
+    width: 44px;
+    height: 44px;
+    font-size: 20px;
+  }
+
+  .topbar__cta-text {
+    height: 44px;
+    padding: 0 14px;
+    font-size: 12px;
+    letter-spacing: 0.04em;
+  }
+
+  /* Purple logo containment */
+  .topbar--purple .topbar__logo img {
+    width: 110px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .topbar__logo img {
+    width: 100px;
+  }
+
+  .topbar__cta-text {
+    display: none; /* icon-only CTA */
+  }
+
+  .topbar__cta {
+    width: 44px;
+    border-radius: 4px;
+  }
+}
+
+/* =========================================================
+   REDUCED MOTION SUPPORT
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+    animation: none !important;
+  }
+}
+
+/* White collapses upward on scroll */
+.topbar--white {
+  background-color: #ffffff;
+  z-index: 20;
+
+  transform: translateY(0);
+  transition: transform 0.3s ease;
+}
+
+body.is-scrolled .topbar--white {
+  transform: translateY(-150%);
+}
+
+
+/* =========================================================
+   PURPLE TOPBAR LOGO CONTAINMENT FIX
+   ========================================================= */
+
+.topbar--purple .topbar__logo {
+  height: 100%;
+  align-items: center;
+}
+
+.topbar--purple .topbar__logo img {
+  margin-top: 0;        /* remove white-bar offset */
+  width: 100px;   /* ensure it fits inside 100px */
+  object-fit: contain; /* safety */
+}
+

@@ -1,0 +1,858 @@
+/* =========================================================
+   ENQUIRE – CONTAINER (FIXED)
+   ========================================================= */
+
+.enquire {
+  width: 99.53vw;
+  /* force full viewport width */
+  min-height: 720px;
+
+  background: linear-gradient(89.72deg,
+      #000E38 0.22%,
+      #3F186A 52.52%);
+
+  opacity: 1;
+
+  display: flex;
+  align-items: center;
+
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+
+  z-index: 1;
+}
+
+
+/* =========================================================
+   INNER WRAPPER (1920 GRID)
+   ========================================================= */
+
+.enquire__inner {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+
+  padding-left: 50px;
+
+  display: flex;
+  grid-template-columns: 1.2fr 1fr 0.8fr;
+  align-items: flex-start;
+  /* gap: 48px; */
+}
+
+
+.enquire__content {
+  width: 520px;
+  height: 336px;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 4.25px;
+
+  margin-top: 192px;
+  margin-bottom: 192px;
+}
+
+
+/* =========================================================
+   ENQUIRE – LEFT CONTENT TITLE
+   ========================================================= */
+.enquire__eyebrow {
+  font-family: 'Museo Sans', sans-serif;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 150%;
+  letter-spacing: 0%;
+
+  background: linear-gradient(180deg, #FFCC81 0%, #E9C79F 100%);
+  /* light off-white from design */
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+
+  margin: 0;
+}
+
+.enquire__title {
+  font-family: 'Museo Sans', sans-serif;
+  font-weight: 700;
+  font-size: 46px;
+  line-height: 1.2;
+  letter-spacing: 0;
+
+  margin: 0;
+
+  background: linear-gradient(180deg,
+      #FFCC81 0%,
+      #E9C79F 100%);
+
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+.enquire__subtitle {
+  font-family: 'Museo Sans', sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  /* usually slightly spaced */
+  background: linear-gradient(180deg, #FFCC81 0%, #E9C79F 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+
+  margin-top: 4px;
+}
+
+
+/* =========================================================
+   EVENT PILL
+   ========================================================= */
+
+.enquire__text {
+  display: flex;
+  flex-direction: column;
+  gap: 4.25px;
+}
+
+/* =========================================================
+   ENQUIRE – PILL INNER TEXT CONTAINER
+   ========================================================= */
+/* =========================================================
+   ENQUIRE – EVENT PILL (OUTER)
+   ========================================================= */
+
+.enquire__pill {
+  position: relative;
+
+  width: 520px;
+  height: 120px;
+
+  margin-top: 35.82px;
+  /* exact spacing from text above */
+
+  background: linear-gradient(180deg,
+      #FFCC81 -43.71%,
+      #E9C79F 118.98%);
+
+  border-radius: 213.33px;
+  opacity: 1;
+}
+
+/* =========================================================
+   ENQUIRE – PILL INNER TEXT CONTAINER
+   ========================================================= */
+
+.enquire__pill-content {
+  position: relative;
+
+  width: 510px;
+  height: 72px;
+
+  top: 4px;
+  left: 5px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  border-radius: 213px;
+
+  /* Gradient border */
+  background:
+    linear-gradient(180deg,
+      #FFCC81 -43.71%,
+      #E9C79F 118.98%) padding-box,
+    linear-gradient(360deg,
+      #000E38 0%,
+      #3F186A 100%) border-box;
+
+  border: 1.33px solid transparent;
+}
+
+/* =========================================================
+   ENQUIRE – PILL LEFT & RIGHT BLOCKS
+   ========================================================= */
+
+.enquire__pill-left,
+.enquire__pill-right {
+  width: 50%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+}
+
+/* =========================================================
+   ENQUIRE – PILL DIVIDER
+   ========================================================= */
+
+.enquire__pill-divider {
+  width: 1.33px;
+  height: 48px;
+
+  background: linear-gradient(360deg,
+      #000E38 0%,
+      #3F186A 100%);
+
+}
+
+/* =========================================================
+   ENQUIRE – PILL PRIMARY TEXT
+   ========================================================= */
+
+.enquire__pill-left strong,
+.enquire__pill-right strong {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-style: bold;
+
+  font-size: 26.67px;
+  line-height: 1.5;
+  letter-spacing: 0;
+
+  background: linear-gradient(360deg, #000E38 0%, #3F186A 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+
+  margin: 0;
+}
+
+/* =========================================================
+   ENQUIRE – PILL SECONDARY TEXT
+   ========================================================= */
+
+.enquire__pill-left span,
+.enquire__pill-right span {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 500;
+  font-style: medium;
+
+  font-size: 18.67px;
+  line-height: 1.7;
+  letter-spacing: 0;
+
+  background: linear-gradient(360deg, #000E38 0%, #3F186A 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  margin: 0;
+}
+
+
+/* =========================================================
+   MEDIA PLACEHOLDER
+   ========================================================= */
+
+/* =========================================================
+   ENQUIRE – IMAGE COLLAGE CONTAINER
+   ========================================================= */
+
+.enquire__media {
+  display: flex;
+  gap: 35px;
+  /* space between image columns */
+
+  margin-left: 30px;
+  /* EXACT: from left content */
+  margin-right: 30px;
+  /* EXACT: from form */
+
+  flex-shrink: 0;
+}
+
+/* =========================================================
+   ENQUIRE – IMAGE COLUMN
+   ========================================================= */
+
+.enquire__media-column {
+  /* =========================================================
+   ENQUIRE – MEDIA COLUMN VIEWPORT
+   ========================================================= */
+
+  height: 720px;
+  /* same as enquire section */
+  overflow: hidden;
+  /* hides looping content */
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+
+/* =========================================================
+   ENQUIRE – IMAGE ITEM
+   ========================================================= */
+
+/* =========================================================
+   ENQUIRE – IMAGE OVAL CONTAINER
+   ========================================================= */
+
+
+/* =========================================================
+   ENQUIRE – MEDIA ANIMATION TRACK
+   ========================================================= */
+
+.enquire__media-track {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  animation: enquire-scroll-up 26s linear infinite;
+  will-change: transform;
+}
+
+.enquire__media-track--reverse {
+  animation-direction: reverse;
+}
+
+@keyframes enquire-scroll-up {
+  from { transform: translateY(0); }
+  to   { transform: translateY(-50%); }
+}
+
+.enquire__media-slider:hover .enquire__media-track,
+.enquire__media-slider:focus-within .enquire__media-track {
+  animation-play-state: paused;
+}
+
+
+.enquire__media-column:nth-child(1) .enquire__media-track {
+  animation-duration: 26s;
+}
+
+.enquire__media-column:nth-child(2) .enquire__media-track {
+  animation-duration: 30s;
+}
+
+.enquire__media-column:nth-child(3) .enquire__media-track {
+  animation-duration: 28s;
+}
+
+.enquire__media:hover .enquire__media-track,
+.enquire__media:focus-within .enquire__media-track {
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .enquire__media-track {
+    animation: none !important;
+    transform: none !important;
+  }
+}
+
+
+.enquire__media-item {
+  width: 150px;
+  height: 360px;
+
+  border-radius: 999px;
+  overflow: hidden;
+
+  position: relative;
+  flex-shrink: 0;
+}
+/* =========================================================
+   ENQUIRE – IMAGE INSIDE OVAL (CRITICAL FIX)
+   ========================================================= */
+
+/* =========================================================
+   ENQUIRE – IMAGE INSIDE OVAL (CORRECT)
+   ========================================================= */
+
+.enquire__media-item img {
+  width: 100%;
+  height: 100%;
+  /* fill container */
+  max-width: none;
+  /* override Bootstrap */
+
+  object-fit: cover;
+  /* IMPORTANT: no distortion */
+
+  display: block;
+}
+
+/* =========================================================
+   ENQUIRE – FORM CONTAINER
+   ========================================================= */
+
+.enquire__form {
+  width: 300px;
+  /* exact */
+  height: 435px;
+  /* exact */
+
+  margin-top: 109px;
+  /* matches Figma vertical offset */
+  margin-bottom: 176px;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(6, 21, 50, 0.2) 100%);
+
+  backdrop-filter: blur(12px);
+
+  border-radius: 12px;
+  opacity: 1;
+
+  padding: 24px;
+
+  display: flex;
+  flex-direction: column;
+
+  flex-shrink: 0;
+}
+
+/* =========================================================
+   ENQUIRE – FORM TITLE
+   ========================================================= */
+
+.enquire__form-title {
+  width: 195;
+  height: 38;
+
+  font-family: 'Archivo', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  font-style: bold;
+  line-height: 1.2;
+  letter-spacing: 0%;
+  color: rgba(255, 255, 255, 1);
+
+  margin: 0 0 24px 0;
+}
+
+/* =========================================================
+   ENQUIRE – FORM INPUTS
+   ========================================================= */
+
+.enquire__form input {
+  width: 250px;
+  height: 10px;
+  opacity: 1;
+  top: 64px;
+  margin-bottom: 13px;
+  border-radius: 8px;
+
+  padding: 24px;
+
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+
+  color: #ffffff;
+
+  background: rgba(255, 255, 255, 0.12);
+
+  border: 0.5px rgba(255, 255, 255, 0.25);
+  border-radius: 8px;
+
+}
+
+.enquire__form input::placeholder {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 13px;
+  line-height: 100%;
+  letter-spacing: 0%;
+
+  color: rgba(255, 255, 255, 1);
+}
+
+.enquire__form input:focus {
+  border-color: #FFCC81;
+}
+
+/* =========================================================
+   ENQUIRE – SUBMIT CTA (CLONE OF TOPBAR CTA)
+   ========================================================= */
+
+.enquire__submit {
+  width: 210px;
+  height: 60px;
+
+  display: flex;
+  align-items: center;
+
+  margin-top: 24px;
+
+  font-family: 'Open Sans', sans-serif;
+  text-decoration: none;
+
+  border-radius: 4px;
+  border: 2px solid white;
+  overflow: hidden;
+
+  background: transparent;
+  cursor: pointer;
+  opacity: 1;
+  padding: 0;
+}
+
+/* =========================================================
+   ENQUIRE – SUBMIT ICON
+   ========================================================= */
+
+.enquire__submit-icon {
+  width: 60px;
+  height: 60px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 28px;
+  font-weight: 600;
+  color: rgba(42, 20, 89, 1);
+
+  background: linear-gradient(white);
+}
+
+/* =========================================================
+   ENQUIRE – SUBMIT TEXT
+   ========================================================= */
+
+.enquire__submit-text {
+  width: 145px;
+  height: 60px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 13px 20px;
+  gap: 10px;
+
+  font-size: 14px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 100%;
+  letter-spacing: 0;
+  text-transform: uppercase;
+
+  color: white;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(6, 21, 50, 0.2) 100%);
+
+
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+
+  border: 2px solid #000E38;
+  border-left: none;
+}
+
+/* =========================================================
+   ACCESSIBILITY
+   ========================================================= */
+
+.enquire__submit:focus-visible {
+  outline: 3px solid #FFCC81;
+  outline-offset: 4px;
+}
+
+.enquire__media-slider {
+  position: relative;
+  overflow: hidden;
+}
+
+.enquire__media-row {
+  display: flex;
+  gap: 35px;
+  transition: transform 0.6s ease;
+  will-change: transform;
+}
+
+
+@media (max-width: 1440px) {
+  .enquire__inner {
+    padding-left: 32px;
+  }
+
+  .enquire__media {
+    gap: 24px;
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+
+  .enquire__media-item {
+    width: 130px;
+    height: 320px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .enquire__inner {
+    flex-wrap: wrap;
+    padding: 32px;
+  }
+
+  .enquire__content {
+    width: 100%;
+    margin-top: 120px;
+    margin-bottom: 48px;
+  }
+
+  .enquire__media {
+    width: 100%;
+    justify-content: center;
+    margin: 0 0 64px 0;
+  }
+
+  .enquire__form {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+
+  /* ===============================
+     CONTAINER RESET
+     =============================== */
+
+  .enquire {
+    width: 100%;
+    min-height: auto;
+
+    left: auto;
+    right: auto;
+    margin-left: 0;
+    margin-right: 0;
+
+    padding: 64px 16px 80px;
+  }
+
+  .enquire__inner {
+    flex-direction: column;
+    align-items: center;
+    padding-left: 0;
+  }
+
+  /* ===============================
+     CONTENT
+     =============================== */
+
+  .enquire__content {
+    width: 100%;
+    max-width: 420px;
+
+    margin: 0 0 32px 0;
+    height: auto;
+
+    align-items: center;
+    text-align: center;
+  }
+
+  .enquire__eyebrow {
+    font-size: 32px;
+    line-height: 1.4;
+  }
+
+  .enquire__title {
+    font-size: 30px;
+  }
+
+  .enquire__subtitle {
+    font-size: 20px;
+  }
+
+  /* ===============================
+     EVENT PILL (STACKED)
+     =============================== */
+
+  .enquire__pill {
+    width: 100%;
+    max-width: 360px;
+    height: auto;
+    padding: 12px;
+  }
+
+  .enquire__pill-content {
+    width: 100%;
+    height: auto;
+
+    flex-direction: column;
+    gap: 12px;
+
+    top: 0;
+    left: 0;
+  }
+
+  .enquire__pill-divider {
+    display: none;
+  }
+
+  /* ===============================
+     IMAGE MEDIA (DISABLE ON MOBILE)
+     =============================== */
+
+  .enquire__media {
+    display: none;
+  }
+
+  /* ===============================
+     FORM
+     =============================== */
+
+  .enquire__form {
+    width: 100%;
+    max-width: 420px;
+
+    margin: 24px auto 0;
+    padding: 20px;
+
+    height: auto;
+  }
+
+  .enquire__form-title {
+    text-align: center;
+  }
+
+  .enquire__form input {
+    width: 100%;
+  }
+
+  .enquire__submit {
+    width: 100%;
+  }
+
+  .enquire__submit-text {
+    width: auto;
+    flex: 1;
+  }
+}
+
+@media (max-width: 480px) {
+  .enquire__eyebrow {
+    font-size: 26px;
+  }
+
+  .enquire__title {
+    font-size: 24px;
+  }
+
+  .enquire__subtitle {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .enquire__inner {
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 24px;
+  }
+
+  .enquire__content {
+    width: 100%;
+    max-width: 520px;
+    margin: 0 0 48px 0;
+    text-align: center;
+  }
+
+  .enquire__pill {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .enquire__media {
+    margin: 40px 0;
+    justify-content: center;
+  }
+
+  .enquire__form {
+    margin: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  /* Prevent horizontal scroll */
+  html, body {
+    overflow-x: hidden;
+  }
+
+  .enquire {
+    min-height: auto;
+    padding-bottom: 40px;
+  }
+
+  .enquire__inner {
+    padding: 24px 16px;
+  }
+
+  /* TEXT */
+  .enquire__eyebrow {
+    font-size: 28px;
+    line-height: 1.3;
+  }
+
+  .enquire__title {
+    font-size: 32px;
+  }
+
+  .enquire__subtitle {
+    font-size: 16px;
+  }
+
+  /* EVENT PILL */
+  .enquire__pill {
+    width: 100%;
+    max-width: 340px;
+    height: auto;
+    padding: 16px;
+    border-radius: 32px;
+  }
+
+  .enquire__pill-content {
+    width: 100%;
+    height: auto;
+    position: static;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .enquire__pill-divider {
+    width: 60%;
+    height: 1px;
+  }
+
+  /* IMAGES — HIDE ON MOBILE */
+  .enquire__media {
+    display: none;
+  }
+
+  /* FORM */
+  .enquire__form {
+    width: 100%;
+    max-width: 360px;
+    height: auto;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .enquire__form input {
+    width: 100%;
+  }
+
+  /* SUBMIT BUTTON */
+  .enquire__submit {
+    width: 100%;
+  }
+
+  .enquire__submit-text {
+    flex: 1;
+  }
+}
