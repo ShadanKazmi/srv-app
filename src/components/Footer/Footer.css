@@ -44,7 +44,6 @@
 .footer__block p {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
-  font-style: regular;
   font-size: 18px;
   line-height: 1.5;
   color: rgba(255, 255, 255, 1);
@@ -69,7 +68,6 @@
   font-size: 16px;
   line-height: 1.5;
   padding: 12px 20px;
-  color: linear-gradient(360deg, #000E38 0%, #3F186A 100%);
 }
 
 @media (max-width: 1024px) {

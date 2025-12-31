@@ -51,7 +51,7 @@
   font-weight: 600;
   font-size: 48px;
   line-height: 150%;
-  letter-spacing: 0%;
+  letter-spacing: 0;
 
   background: linear-gradient(180deg, #FFCC81 0%, #E9C79F 100%);
   -webkit-background-clip: text;
@@ -86,7 +86,7 @@
   font-weight: 400;
   font-size: 30px;
   line-height: 150%;
-  letter-spacing: 0%;
+  letter-spacing: 0;
   background: linear-gradient(180deg, #FFCC81 0%, #E9C79F 100%);
   -webkit-background-clip: text;
   background-clip: text;
@@ -169,8 +169,6 @@
 .enquire__pill-right strong {
   font-family: 'Open Sans', sans-serif;
   font-weight: 700;
-  font-style: bold;
-
   font-size: 26.67px;
   line-height: 1.5;
   letter-spacing: 0;
@@ -188,8 +186,6 @@
 .enquire__pill-right span {
   font-family: 'Open Sans', sans-serif;
   font-weight: 500;
-  font-style: medium;
-
   font-size: 18.67px;
   line-height: 1.7;
   letter-spacing: 0;
@@ -313,15 +309,11 @@
 }
 
 .enquire__form-title {
-  width: 195;
-  height: 38;
-
   font-family: 'Archivo', sans-serif;
   font-size: 32px;
   font-weight: 700;
-  font-style: bold;
   line-height: 1.2;
-  letter-spacing: 0%;
+  letter-spacing: 0;
   color: rgba(255, 255, 255, 1);
 
   margin: 0 0 24px 0;
@@ -352,10 +344,9 @@
 .enquire__form input::placeholder {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
-  font-style: Regular;
   font-size: 13px;
   line-height: 100%;
-  letter-spacing: 0%;
+  letter-spacing: 0;
 
   color: rgba(255, 255, 255, 1);
 }
@@ -398,13 +389,12 @@
   font-weight: 600;
   color: rgba(42, 20, 89, 1);
 
-  background: linear-gradient(white);
+  background: white;
 }
 
 .enquire__submit-text {
   width: 145px;
   height: 60px;
-
   display: flex;
   align-items: center;
   justify-content: center;
@@ -420,7 +410,7 @@
   text-transform: uppercase;
 
   color: white;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(6, 21, 50, 0.2) 100%);
+  background: linear-gradient(180deg, rgba(0,0,0,0.2), rgba(6,21,50,0.2));
 
 
   border-top-right-radius: 4px;
