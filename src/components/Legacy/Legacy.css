@@ -61,9 +61,54 @@
 }
 
 @media (max-width: 480px) {
+  .legacy {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+
+  .legacy__inner {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
   .legacy__image {
-    max-height: 140px;
-    padding: 10px;
+    max-height: 120px;
+    padding: 8px;
+  }
+
+  .participating-schools__inner {
+    padding: 0 16px 40px;
+  }
+
+  .participating-schools__title {
+    font-size: 22px;
+    margin-bottom: 24px;
+  }
+
+  .participating-schools__grid {
+    gap: 24px;
+  }
+
+  .participating-schools__item {
+    height: 80px;
+    width: 180px;
+    padding: 12px;
+  }
+}
+
+@media (max-width: 360px) {
+  .legacy__image {
+    max-height: 100px;
+    padding: 6px;
+  }
+
+  .participating-schools__title {
+    font-size: 18px;
+  }
+
+  .participating-schools__item {
+    height: 70px;
+    width: 140px;
   }
 }
 
